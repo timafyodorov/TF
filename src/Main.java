@@ -8,8 +8,6 @@ public class Main {
         long sH = 8484;
         float main = 3.75F;
         double car = 1.708;
-
-
         System.out.println("dog: " + dog + " тип - int");
         System.out.println("cat: " + cat + " тип - byte");
         System.out.println("paper: " + paper + " тип - short");
@@ -50,6 +48,13 @@ public class Main {
         System.out.println("За 3 дня машина произвела " + bottlesIn3Days + " штук бутылок.");
         System.out.println("За 1 месяц машина произвела " + bottlesIn1Month + " штук бутылок.");
 
+        int totalPaint = 120;
+        int whitePaintPerClass = 2;
+        int brownPaintPerClass = 4;
+        int x = totalPaint / (whitePaintPerClass + brownPaintPerClass);
+        int whitePaint = whitePaintPerClass * x;
+        int brownPaint = brownPaintPerClass * x;
+        System.out.println("В школе, где " + x + " классов, нужно " + whitePaint + " банок белой краски и " + brownPaint + " банок коричневой краски.");
 
         int bananas = 5 * 80;
         int milk = 2 *105 / 100;
@@ -59,6 +64,8 @@ public class Main {
         double totalWeightKilograms = totalWeightGrams / 1000.0;
         System.out.println("Вес спортзавтрака в граммах: " + totalWeightGrams + " г.");
         System.out.println("Вес спортзавтрака в килограммах: " + totalWeightKilograms + " кг.");
+
+
 
 
         double weightToLoseKg = 7;
